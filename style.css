@@ -1,0 +1,177 @@
+html {
+  height: 100%;
+  background: radial-gradient(circle, #fff, rgb(189, 182, 182));
+  background-image: url(https://raw.githubusercontent.com/Saumya-07/Fruit-Slicer/master/images/bg3%20-%20Copy.jpg);
+  background-size: cover;
+  font-family: cursive, sans-serif;
+}
+#container {
+  width: 750px;
+  height: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#front {
+  font-size: 40px;
+  color: #d3901d;
+  width: 650px;
+  height: 450px;
+  padding: 10px;
+  margin: 30px auto 20px auto;
+  z-index: 2;
+  display: none;
+}
+#front img {
+  width: 280px;
+}
+#instructions {
+  width: 450px;
+  height: 45px;
+  margin: 1px auto;
+  font-size: 30px;
+
+  background-color: #d3901d;
+  color: #2e1d11;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 0px 0px #775012;
+}
+#fruitcontainer {
+  background: url(https://raw.githubusercontent.com/Saumya-07/Fruit-Slicer/master/images/wood-bg2.jpg);
+  background-size: cover;
+  width: 650px;
+  height: 450px;
+  padding: 10px;
+  margin: 30px auto 20px auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: cursive, sans-serif;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 4px 0px 0px #4b4b4e;
+  position: relative;
+}
+
+.fruit {
+  display: none;
+  position: absolute;
+}
+#score {
+  display: none;
+}
+.scoreDisplay {
+  z-index: 1;
+  display: flex;
+  background-color: transparent;
+  color: #ffffff;
+  position: absolute;
+  font-size: 30px;
+  justify-items: center;
+}
+
+#score img {
+  width: 40px;
+  align-items: center;
+  padding-right: 5px;
+}
+#trialsleft {
+  margin-top: 7px;
+  display: flex;
+  position: absolute;
+  left: 550px;
+  background-color: transparent;
+  z-index: 1;
+}
+.life {
+  width: 30px;
+  padding-right: 5px;
+}
+
+#startReset {
+  position: relative;
+  width: 90px;
+  padding: 10px;
+  margin: 0 auto;
+
+  cursor: pointer;
+  text-align: center;
+  background-color: #f14343;
+  box-shadow: #ffffff;
+  border-radius: 5px;
+  transition: all 0.2s;
+  
+}
+#startReset:active {
+  background-color: #f14343;
+  box-shadow: 0px 0px #ffffff;
+  margin-top:0;
+  color: white;
+}
+
+#gameOver {
+  box-sizing: border-box;
+  width: 500px;
+  height: 300px;
+  background: transparent;
+  color: #d3901d;
+  text-transform: upperCase;
+  text-align: center;
+  font-size: 3em;
+  position: absolute;
+  top: 170px;
+  left: 150px;
+  z-index: 2;
+}
+
+.container22{
+  position: absolute;
+  top: -30px;
+  left: 1120px;
+  background: transparent;
+  text-align: center;
+  color: white;
+  height: 10px;
+  
+}
+
+.text22{
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  color: transparent;
+  background-size: 400% 400%;
+  background-clip: text;
+  animation: gradient 5s ease infinite;
+  text-overflow: clip;
+}
+
+@keyframes gradient{
+  0% {
+      background-position: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+}
+
+.back-button22{
+  position: fixed;
+  bottom: 12px;
+  left: 15px;
+  padding: 10px 22px;
+  background-color: #1a6bd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
